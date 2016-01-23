@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+*********************************************
+* calculator_layout.xml
+* corresponding activity: CalculatorMainActivity.java
+* prefix: cl_ (Used for prefixing unique identifiers)
+**
+Use:
+* Demonstrate a simple calculator
+* Demonstrate text views, edit text, buttons, business
+logic
+*********************************************
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/operand1" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/operand2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Result = Operand1 Operator Operand2"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/plus" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/minus" />
+
+        <Button
+            android:id="@+id/mulButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mul" />
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/divide" />
+    </LinearLayout>
+</LinearLayout>
